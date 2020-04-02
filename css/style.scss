@@ -1,7 +1,13 @@
 /* FONT */
-
-
-
+@font-face {
+    font-family: 'karlaregular';
+    src: url('/fonts/karla-regular-webfont.eot');
+    src: url('/fonts/karla-regular-webfont.eot?') format('embedded-opentype'),
+         url('/fonts/karla-regular-webfont.woff') format('woff'),
+         url('/fonts/karla-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 $regular: 400;
 $bold: 700;
 
@@ -17,16 +23,14 @@ $bold: 700;
 
     /* padding secondary-block */
     $pad: 98px 0 0 90px;
+    $padMob: 0 0 0 38px;
 
 /* GENERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    @font-face {
-        font-family: Karla;
-        src: url(https://fonts.google.com/specimen/Karla);
-    }
+    letter-spacing: 0.1em;
 }
 
 /* PRIME BLOCK */
@@ -34,18 +38,22 @@ $bold: 700;
     background-color: #FFFFFF;
     padding: $pad;
     &__title {
-        font-size: 32px;
+        padding-bottom: 60px;
+        font-size: 2em;
         font-weight: $bold;
         color: $cyan;
     }
     &__subtitle {
-        font-size: 24px;
+        padding-bottom: 27px;
+        font-size: 1.5em;
         font-weight: $bold;
         color: $Bright-Yellow;
     }
     &__txt {
-        font-size: 22px;
+        padding-bottom: 90px;
+        font-size: 1.4em;
         font-weight: $regular;
+        line-height: 48px;
         color: $Grayish-Blue;
     }
 }
@@ -59,30 +67,35 @@ $bold: 700;
         padding: $pad;
         background-color: $cyan;
         &--title {
-            font-size: 24px;
+            padding-bottom: 48px;
+            font-size: 1.5em;
             font-weight: $bold;
         }
         &--white {
             color: #FFFFFF;
         }
         &--lightGray {
+            padding-bottom: 21px;
             color: $Light-Gray;
-            font-size: 22px;
+            font-size: 1.4em;
             font-weight: $regular;
             >span {
-                font-size: 42px;
+                font-size: 2.55em;
                 font-weight: $bold;
             }
         }
         &--price {
-            font-size: 22px;
+            padding-bottom: 67px;
+            font-size: 1.4em;
             font-weight: $regular;
         }
         &--btn {
-            padding: 40px 200px;
+            width: 72%;
+            height: 104px;
+            padding: auto;
             border-radius: 10px;
             background-color: $Bright-Yellow;
-            font-size: 22px;
+            font-size: 1.4em;
             font-weight: $bold;
             color: #FFFFFF;
         }
@@ -92,13 +105,16 @@ $bold: 700;
         padding: $pad;
         background-color: #4abebd;
         &--white {
-            font-size: 24px;
+            padding-bottom: 46px;
+            font-size: 1.5em;
             font-weight: $bold;
             color: #FFFFFF;
         }
         &--lightGray {
-            font-size: 19px;
+            padding-bottom: 100px;
+            font-size: 1.25em;
             font-weight: $regular;
+            line-height: 43px;
             color: $Light-Gray;
         }
     }
@@ -112,4 +128,25 @@ $bold: 700;
     >a {
         color: hsl(228, 45%, 44%);
     }
+}
+
+/* MOBILE */
+
+@media screen and(max-width: 768px) {
+
+    /* PRIME BLOCK */
+    .prime-block {
+        padding: 0;
+    }
+  
+    /* SECONDARY BLOCK */
+    .secondary-block {
+        display: block;
+        padding: 0;
+        &__suscribe, &__why {
+            width: 100%;
+            padding: $padMob;
+        }
+    }
+    
 }
