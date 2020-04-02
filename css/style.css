@@ -1,0 +1,95 @@
+/* FONT */
+@font-face {
+  font-family: Karla;
+  src: url(https://fonts.google.com/specimen/Karla);
+}
+
+/* VARIABLES */
+/* color primary */
+/* color secondary */
+/* padding secondary-block */
+/* PRIME BLOCK */
+.prime-block {
+  background-color: #FFFFFF;
+}
+
+.prime-block__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2ab2af;
+}
+
+.prime-block__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #c0df34;
+}
+
+.prime-block__txt {
+  font-size: 16px;
+  font-weight: 400;
+  color: #98a6bd;
+}
+
+/* SECONDARY BLOCK */
+.secondary-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.secondary-block__suscribe {
+  width: 50%;
+  padding: 0 auto;
+  background-color: #2ab2af;
+}
+
+.secondary-block__suscribe--white {
+  color: #FFFFFF;
+}
+
+.secondary-block__suscribe--lightGray {
+  color: #e5eff5;
+}
+
+.secondary-block__suscribe--title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.secondary-block__suscribe > input {
+  padding: 40px 202px;
+  border-radius: 6px;
+  background-color: #c0df34;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.secondary-block__why {
+  width: 50%;
+  padding: 0 auto;
+  background-color: #4abebd;
+}
+
+.secondary-block__why--white {
+  color: #FFFFFF;
+}
+
+.secondary-block__why--lightGray {
+  color: #e5eff5;
+}
+
+/* FOOTER */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution > a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

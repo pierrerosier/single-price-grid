@@ -1,0 +1,91 @@
+/* FONT */
+
+@font-face {
+    font-family: Karla;
+    src: url(https://fonts.google.com/specimen/Karla);
+}
+
+$regular: 400;
+$bold: 700;
+
+/* VARIABLES */
+
+    /* color primary */
+    $cyan: hsl(179, 62%, 43%);
+    $Bright-Yellow: hsl(71, 73%, 54%);
+
+    /* color secondary */
+    $Light-Gray: hsl(204, 43%, 93%);
+    $Grayish-Blue: hsl(218, 22%, 67%);
+
+    /* padding secondary-block */
+    $pad: 0 auto;
+
+/* PRIME BLOCK */
+.prime-block {
+    background-color: #FFFFFF;
+    &__title {
+        font-size: 24px;
+        font-weight: $bold;
+        color: $cyan;
+    }
+    &__subtitle {
+        font-size: 18px;
+        font-weight: $bold;
+        color: $Bright-Yellow;
+    }
+    &__txt {
+        font-size: 16px;
+        font-weight: $regular;
+        color: $Grayish-Blue;
+    }
+}
+
+/* SECONDARY BLOCK */
+.secondary-block {
+    display: flex;
+    flex-direction: row;
+    &__suscribe {
+        width: 50%;
+        padding: $pad;
+        background-color: $cyan;
+        &--white {
+            color: #FFFFFF;
+        }
+        &--lightGray {
+            color: $Light-Gray;
+        }
+        &--title {
+            font-size: 18px;
+            font-weight: $bold;
+        }
+        >input {
+            padding: 40px 202px;
+            border-radius: 6px;
+            background-color: $Bright-Yellow;
+            font-size: 16px;
+            font-weight: $bold;
+        }
+    }
+    &__why {
+        width: 50%;
+        padding: $pad;
+        background-color: #4abebd;
+        &--white {
+            color: #FFFFFF;
+        }
+        &--lightGray {
+            color: $Light-Gray;
+        }
+    }
+}
+
+/* FOOTER */
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    >a {
+        color: hsl(228, 45%, 44%);
+    }
+}
