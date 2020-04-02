@@ -1,32 +1,43 @@
 /* FONT */
-@font-face {
-  font-family: Karla;
-  src: url(https://fonts.google.com/specimen/Karla);
-}
-
 /* VARIABLES */
 /* color primary */
 /* color secondary */
 /* padding secondary-block */
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  * {
+    font-family: Karla;
+    src: url(https://fonts.google.com/specimen/Karla);
+  }
+}
+
 /* PRIME BLOCK */
 .prime-block {
   background-color: #FFFFFF;
+  padding: 98px 0 0 90px;
 }
 
 .prime-block__title {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
   color: #2ab2af;
 }
 
 .prime-block__subtitle {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
   color: #c0df34;
 }
 
 .prime-block__txt {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 400;
   color: #98a6bd;
 }
@@ -44,8 +55,13 @@
 
 .secondary-block__suscribe {
   width: 50%;
-  padding: 0 auto;
+  padding: 98px 0 0 90px;
   background-color: #2ab2af;
+}
+
+.secondary-block__suscribe--title {
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .secondary-block__suscribe--white {
@@ -54,32 +70,44 @@
 
 .secondary-block__suscribe--lightGray {
   color: #e5eff5;
+  font-size: 22px;
+  font-weight: 400;
 }
 
-.secondary-block__suscribe--title {
-  font-size: 18px;
+.secondary-block__suscribe--lightGray > span {
+  font-size: 42px;
   font-weight: 700;
 }
 
-.secondary-block__suscribe > input {
-  padding: 40px 202px;
-  border-radius: 6px;
+.secondary-block__suscribe--price {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.secondary-block__suscribe--btn {
+  padding: 40px 200px;
+  border-radius: 10px;
   background-color: #c0df34;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 700;
+  color: #FFFFFF;
 }
 
 .secondary-block__why {
   width: 50%;
-  padding: 0 auto;
+  padding: 98px 0 0 90px;
   background-color: #4abebd;
 }
 
 .secondary-block__why--white {
+  font-size: 24px;
+  font-weight: 700;
   color: #FFFFFF;
 }
 
 .secondary-block__why--lightGray {
+  font-size: 19px;
+  font-weight: 400;
   color: #e5eff5;
 }
 

@@ -1,9 +1,6 @@
 /* FONT */
 
-@font-face {
-    font-family: Karla;
-    src: url(https://fonts.google.com/specimen/Karla);
-}
+
 
 $regular: 400;
 $bold: 700;
@@ -19,23 +16,35 @@ $bold: 700;
     $Grayish-Blue: hsl(218, 22%, 67%);
 
     /* padding secondary-block */
-    $pad: 0 auto;
+    $pad: 98px 0 0 90px;
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @font-face {
+        font-family: Karla;
+        src: url(https://fonts.google.com/specimen/Karla);
+    }
+}
 
 /* PRIME BLOCK */
 .prime-block {
     background-color: #FFFFFF;
+    padding: $pad;
     &__title {
-        font-size: 24px;
+        font-size: 32px;
         font-weight: $bold;
         color: $cyan;
     }
     &__subtitle {
-        font-size: 18px;
+        font-size: 24px;
         font-weight: $bold;
         color: $Bright-Yellow;
     }
     &__txt {
-        font-size: 16px;
+        font-size: 22px;
         font-weight: $regular;
         color: $Grayish-Blue;
     }
@@ -44,27 +53,38 @@ $bold: 700;
 /* SECONDARY BLOCK */
 .secondary-block {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;;
     &__suscribe {
         width: 50%;
         padding: $pad;
         background-color: $cyan;
+        &--title {
+            font-size: 24px;
+            font-weight: $bold;
+        }
         &--white {
             color: #FFFFFF;
         }
         &--lightGray {
             color: $Light-Gray;
+            font-size: 22px;
+            font-weight: $regular;
+            >span {
+                font-size: 42px;
+                font-weight: $bold;
+            }
         }
-        &--title {
-            font-size: 18px;
-            font-weight: $bold;
+        &--price {
+            font-size: 22px;
+            font-weight: $regular;
         }
-        >input {
-            padding: 40px 202px;
-            border-radius: 6px;
+        &--btn {
+            padding: 40px 200px;
+            border-radius: 10px;
             background-color: $Bright-Yellow;
-            font-size: 16px;
+            font-size: 22px;
             font-weight: $bold;
+            color: #FFFFFF;
         }
     }
     &__why {
@@ -72,9 +92,13 @@ $bold: 700;
         padding: $pad;
         background-color: #4abebd;
         &--white {
+            font-size: 24px;
+            font-weight: $bold;
             color: #FFFFFF;
         }
         &--lightGray {
+            font-size: 19px;
+            font-weight: $regular;
             color: $Light-Gray;
         }
     }
