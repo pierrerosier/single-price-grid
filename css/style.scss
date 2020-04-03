@@ -1,10 +1,10 @@
 /* FONT */
 @font-face {
     font-family: 'karlaregular';
-    src: url('/fonts/karla-regular-webfont.eot');
-    src: url('/fonts/karla-regular-webfont.eot?') format('embedded-opentype'),
-         url('/fonts/karla-regular-webfont.woff') format('woff'),
-         url('/fonts/karla-regular-webfont.ttf') format('truetype');
+    src: url('../fonts/karla-regular-webfont.eot');
+    src: url('../fonts/karla-regular-webfont.eot?') format('embedded-opentype'),
+         url('../fonts/karla-regular-webfont.woff') format('woff'),
+         url('../fonts/karla-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -90,10 +90,11 @@ $bold: 700;
             font-weight: $regular;
         }
         &--btn {
-            width: 72%;
-            height: 104px;
-            padding: auto;
+            width: 75%;
+            height: 90px;
             border-radius: 10px;
+            border-width: 0;
+            box-shadow: 10px 10px 42px -8px rgba(0,0,0,0.75);
             background-color: $Bright-Yellow;
             font-size: 1.4em;
             font-weight: $bold;
@@ -136,17 +137,70 @@ $bold: 700;
 
     /* PRIME BLOCK */
     .prime-block {
+        width: 86%;
+        margin: 0 auto;
         padding: 0;
+        &__title {
+            padding: 28px 0 25px;
+            font-size: 1.25em;
+        }
+        &__subtitle {
+            padding: 0;
+            font-size: 1.3em;
+        }
+        &__txt {
+            padding: 20px 0 27px;
+            font-size: 1.2em;
+            &--mobile {
+                display: none;
+            }
+        }
     }
   
     /* SECONDARY BLOCK */
     .secondary-block {
         display: block;
+        margin: 0;
         padding: 0;
-        &__suscribe, &__why {
+        &__suscribe {
             width: 100%;
-            padding: $padMob;
+            margin: 0;
+            padding: 0 0 34px 0;
+            &--title, &--price, &--lightGray {
+                width: 86%;
+                margin: 0 auto;
+            }
+            &--title {
+                padding: 34px 0 20px;
+                font-size: 1.5em;
+            }
+            &--price {
+                padding: 0 0 22px;
+            }
+            &--btn {
+                display: block;
+                margin: 0 auto;
+                width: 86%;
+                text-align: center;
+            }
         }
+        &__why {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            &--white, &--lightGray {
+                width: 86%;
+                margin: 0 auto;
+            }
+            &--white {
+                padding: 34px 0 20px;
+            }
+            &--lightGray {
+                padding: 0 0 24px;
+                font-size: 1.2em;
+            }
+        }
+        
     }
     
 }
